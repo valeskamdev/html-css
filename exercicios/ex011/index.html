@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="heart.ico.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--NA TAG SOURCE MEDIA MUDAMOS "MIN" PARA "MAX" -->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--DENTRO DO VALOR " MAX-WIDTH:" ACRESCENTAMOS 50PX A MAIS POR CONTA DAS BARRAS DE ROLAGEM NO NAVEGADOR -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+
+     <h1>Reproduzindo Áudio</h1>
+     <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+     <audio src="midia/happy-mistake.mp3" controls autoplay></audio> <!--MP3 WAV OGG--> 
+
+       <!--OUU-->
+     <audio preload="auto" controls autoplay loop> 
+         <source src="midia/cosmic-drift.mp3" type="audio/peg">
+         <source src="midia/cosmic-drift.ogg" type="audio/ogg">
+         <source src="midia/cosmic-drift.wav" type="audio/wav"> <!--3 TIPOS DE MÚSICAS (EVITAR ARQUIVO WAV, PESADO DEMAISSSS)-->
+          <p>Infelizmente seu navegador não consegue reproduzir áudio.</p> <a href="midia/cosmic-drift.mp3">Clique a1qui para baixar o arquivo mp3</a>
+
+     </audio>
+    </picture>
+</body>
+</html>
